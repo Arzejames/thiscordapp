@@ -1,0 +1,483 @@
+/* Everything, controls everything */
+* {
+    font-family: "PT Sans", sans-serif;
+    padding: 0;
+    margin: 0;
+    color: #eeeeee;
+}
+body {
+    background-color: black;
+}
+
+/* Thiscord Title */
+#otherTitleColor {
+    color:#66ff00;
+}
+#header {
+    background-color: #000000;
+    font-size: 3vh;
+    height: 5vh;
+    padding: 10px;
+}
+
+/* Main Body Part Styling */
+#container {
+    display: flex;
+    flex-direction: row;
+    background-color: #313338;
+    margin: 0;
+    padding: 0;
+    height: 90vh;
+    bottom: 0;
+    position: fixed;
+    max-width: 100vw;
+}
+#currentServerTitle, #currentChannelTitle{
+    font-weight: bold;
+    font-size: 4vh;
+    padding-top: 2vh;
+}
+.seperator {
+    min-width: 0.25vw;
+}
+
+/* Server Lists */
+#serverContainer {
+    background-color: #1E1F22;
+    max-width: 17.5vw;
+    min-width: 17.5vw;
+}
+#serverList {
+    background-color: #1E1F22;
+    width: 17.5vw;
+    height: 90vh;
+    margin: none;
+    padding: none;
+}
+#serverList li {
+    border-bottom:2px solid #313338;
+    margin: 0 1vw 4vh 1vw;
+    list-style-type: none;
+}
+#serverList li:not(#currentServerTitle) {
+    font-size: 2.5vh;
+}
+#stuff {
+    height: 10vh;
+    position: fixed;
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+    width: 17.5vw;
+    font-size: 2.5vh;
+    background-color: #000000;
+}
+#STUFF2 {
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* channel lists */
+#channelContainer {
+    background-color: #1E1F22;
+    max-width: 17.5vw;
+    min-width: 17.5vw;
+    padding: none;
+    margin: none;
+}
+#channelList {
+    background-color: #1E1F22;
+    width: 17.5vw;
+    height: 75vh;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+#channelList li {
+    border-bottom:2px solid #313338;
+    margin: 0 1vw 4vh 1vw;
+}
+#channelList li:not(#currentChannelTitle) {
+    font-size: 2.5vh;
+}
+#userInfo {
+    height: 10vh;
+    position: fixed;
+    bottom: 0;
+    width: 17.5vw;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 2.5vh;
+    background-color: #000000;
+}
+#usr {
+    font-weight: bold;
+    text-align: center;
+    padding-top: 3.5vh;
+}
+#LogOut {
+    height: 4vh;
+    color: black;
+    border: none;
+    background-color: #66ff00;
+    padding: 0 1vw;
+    font-weight: 1000;
+    text-align: center;
+    margin-top: 3.5vh;
+    font-size: 2.5vh;
+}
+
+/* message lists */
+#messageList {
+    background-color: #1E1F22;
+    width: 64.5vw;
+    height: 75vh;
+    list-style-type: none;
+    padding: 10px;
+    margin: 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    word-wrap: break-word;
+}
+
+#messageImg {
+    display: block;
+}
+#messageListContainer {
+    right: 0;
+    height: 90vh;
+    background-color: #1E1F22;
+}
+#loadMore {
+    height: 4vh;
+    margin-top: 0.5vh;
+    color: black;
+    border: none;
+    background-color: #66ff00;
+    padding: 0 1vw;
+    font-weight: 1000;
+    font-size: 2.5vh;
+    display: block;
+    margin: 0 auto;
+}
+
+/* input area styling */
+#messageInput {
+    height: 10vh;
+    position: fixed;
+    bottom: 0;
+    width: 64.5vw;
+    background-color: black;
+    display: flex;
+    justify-content: space-evenly;
+}
+.upload {
+    border: none;
+    background-color: #66ff00;
+    color: black;
+    padding: 0 1vw;
+    border-radius: 10px;
+    height: 6vh;
+    font-size: 2.5vh;
+    margin-top: 2vh;
+}
+.input {
+    width: 45vw;
+    height: 6vh;
+    background-color: #565656;
+    border: none;
+    border-radius: 10px;
+    font-size: 2.5vh;
+    margin-top: 2vh;
+}
+.submit {
+    width: 10vw;
+    height: 6vh;
+    color:#1E1F22;
+    font-weight: bold;
+    background-color: #66ff00;
+    border-radius: 10px;
+    border: none;
+    font-size: 2.5vh;
+    margin-top: 2vh;
+}
+
+/* message styling */
+#message {
+    margin-bottom: 4vh;
+}
+#row {
+    display: flex;
+    flex-direction: row;
+    height: 2vh;
+    margin-bottom: 1vh;
+    margin-top: 1vh;
+    max-width: 20vw;
+    font-size: 2vh;
+}
+#name {
+    color: #eeeeee;
+    font-weight: bold;
+    margin-right: 1vw;
+}
+#date {
+    color: #aaaaaa;
+}
+#msg {
+    color: #eeeeee;
+    font-size: 2.5vh;
+    border-bottom: 2px solid #313338;
+}
+
+/* for mobile devices */
+@media all and (max-width:1000px) {
+    
+    /* Everything, controls everything */
+* {
+    font-family: "PT Sans", sans-serif;
+    padding: 0;
+    margin: 0;
+    color: #eeeeee;
+}
+body {
+    background-color: black;
+}
+
+/* Thiscord Title */
+#otherTitleColor {
+    color:#66ff00;
+}
+#header {
+    background-color: #000000;
+    font-size: 3vh;
+    height: 5vh;
+    padding: 10px;
+}
+
+/* Main Body Part Styling */
+#container {
+    display: flex;
+    flex-direction: column;
+    background-color: #313338;
+    height: 90vh;
+    max-height: 90vh;
+    bottom: 0;
+    position: fixed;
+    max-width: 100vw;
+}
+.seperator {
+    min-height: 0.25vh;
+    background-color: #565656;
+}
+/* Server Lists */
+#serverContainer {
+    background-color: #1E1F22;
+    min-width: 100vw;
+    max-width: 100vw;
+    height: 10vh;
+    max-height: 10vh;
+}
+#serverList {
+    background-color: #1E1F22;
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+#serverList li {
+    margin: 0 1vw 1vh 1vw;
+    list-style-type: none;
+    display: inline-block;
+    max-width: 15vw;
+    min-width: 15vw;
+    list-style: outside none none;
+    padding-top: 0.5vh;
+    display: flex;
+    align-items: center;
+    border: none;
+}
+#serverList li:not(#currentServerTitle) {
+    font-size: 2vh;
+}
+#currentServerTitle {
+    font-size: 2.5vh;
+}
+#stuff {
+    height: 10vh;
+    position: fixed;
+    bottom: 0; 
+    width: 17.5vw;
+    font-size: 2.5vh;
+    background-color: #000000;
+}
+#STUFF2 {
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* channel lists */
+#channelContainer {
+    background-color: #1E1F22;
+    min-width: 100vw;
+    max-width: 100vw;
+    height: 10vh;
+    max-height: 10vh;
+}
+#channelList {
+    background-color: #1E1F22;
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    justify-content: space-evenly;
+}
+#channelList li {
+    margin: 0 1vw 1vh 1vw;
+    list-style-type: none;
+    display: inline-block;
+    max-width: 15vw;
+    min-width: 15vw;
+    list-style: outside none none;
+    padding-top: 0.5vh;
+    display: flex;
+    align-items: center;
+    border: none;
+}
+#channelList li:not(#currentChannelTitle) {
+    font-size: 2vh;
+}
+#currentChannelTitle {
+    font-size: 2.5vh;
+}
+#userInfo {
+    height: 10vh;
+    position: fixed;
+    bottom: 0;
+    width: 17.5vw;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 2.5vh;
+    background-color: #000000;
+}
+#usr {
+    font-weight: bold;
+    text-align: center;
+    padding-top: 3.5vh;
+}
+#LogOut {
+    height: 4vh;
+    top: -2vh;
+    right: 1vw;
+    position: fixed;
+    color: black;
+    border: none;
+    background-color: #66ff00;
+    font-weight: 1000;
+    text-align: center;
+    font-size: 2.5vh;
+}
+
+/* message lists */
+#messageList {
+    background-color: #1E1F22;
+    width: 100vw;
+    height: 58vh;
+    max-height: 58vh;
+    list-style-type: none;
+    padding: 10px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    word-wrap: break-word;
+}
+#messageListContainer {
+    right: 0;
+    max-height: 60vh;
+    background-color: #1E1F22;
+}
+#loadMore {
+    height: 4vh;
+    margin-top: 0.5vh;
+    color: black;
+    border: none;
+    background-color: #66ff00;
+    padding: 0 1vw;
+    font-weight: 1000;
+    font-size: 2.5vh;
+    display: block;
+    margin: 0 auto;
+}
+
+/* input area styling */
+#messageInput {
+    height: 10vh;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    background-color: black;
+    display: flex;
+    justify-content: space-evenly;
+}
+.upload {
+    border: none;
+    background-color: #66ff00;
+    color: black;
+    padding: 0 2vw;
+    border-radius: 10px;
+    height: 6vh;
+    font-size: 2vh;
+    margin-top: 2vh;
+}
+.input {
+    max-width: 35vw;
+    height: 6vh;
+    background-color: #565656;
+    border: none;
+    border-radius: 10px;
+    font-size: 2vh;
+    margin-top: 2vh;
+    padding: 0 2vw;
+}
+.submit {
+    width: 15vw;
+    height: 6vh;
+    color:#1E1F22;
+    font-weight: bold;
+    background-color: #66ff00;
+    border-radius: 10px;
+    border: none;
+    font-size: 2vh;
+    margin-top: 2vh;
+    padding: 0 2vw;
+}
+
+/* message styling */
+#message {
+    margin-bottom: 4vh;
+}
+#row {
+    display: flex;
+    flex-direction: row;
+    height: 2vh;
+    margin-bottom: 1vh;
+    margin-top: 1vh;
+    font-size: 2vh;
+    min-width: 75vw;
+}
+#name {
+    color: #eeeeee;
+    font-weight: bold;
+    margin-right: 1vw;
+}
+#date {
+    color: #aaaaaa;
+}
+#msg {
+    color: #eeeeee;
+    font-size: 2.5vh;
+    border-bottom: 2px solid #313338;
+}
+}

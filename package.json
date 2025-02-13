@@ -1,0 +1,14 @@
+{
+  "name": "thiscord",
+  "version": "0.1.0",
+  "description": "ThisCord is a knock of version of discord which is written in node.js using socket.io",
+  "type": "module",
+  "dependencies": {
+    "crypto": "^1.0.1",
+    "express": "^4.21.2",
+    "geoip-lite": "^1.4.10",
+    "nodemon": "^3.1.7",
+    "socket.io": "^4.8.1",
+    "sqlite3": "^5.1.7"
+  }
+}

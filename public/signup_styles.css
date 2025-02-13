@@ -1,0 +1,161 @@
+body {
+    background-color: #000000;
+    font-family: "PT Sans", sans-serif;
+    padding: 0;
+    margin: 0;
+}
+#errormessage {
+    color:#F2F3F5!important;
+    margin:none!important;
+}
+#title{
+    margin: 0;
+}
+#header {
+    background-color: #000000;
+    font-size: 3vh;
+    height: 5vh;
+    padding: 10px;
+    color: #eeeeee;
+}
+#otherTitleColor {
+    color:#66ff00;
+}
+#log-in {
+    max-width: 25%;
+    max-height: 50%;
+    border-radius: 5px;
+    margin: auto;
+    margin-top: 0.5%;
+    background-color: #313338;
+    padding: 2.5%;
+    
+}
+#log-in h2{
+    color: #F2F3F5;
+    font-size: 25px;
+    text-align: center;
+    margin: 0 0 1% 0;
+}
+.label {
+    color: #B5BAC1;
+    font-weight: bold;
+    width: 98%;
+    font-size: 15px;
+}
+.input {
+    background-color: #1E1F22;
+    border: none;
+    width: 98%;
+    color: #D3D6D9;
+    margin-bottom:5%;
+    margin-top: 2%;
+    border-top: 10px solid #1E1F22;
+    border-bottom: 10px solid #1E1F22;
+    font-family:"PT Sans", sans-serif ;
+    color: #B5BAC1;
+    font-weight: bold;
+    font-size: 15px;
+
+}
+#login {
+    background-color: #66ff00;
+    border: none;
+    width: 98%;
+    font-size: 15px;
+    border-top: 10px solid #66ff00;
+    border-bottom: 10px solid #66ff00;
+    font-weight: bold;
+    margin-bottom: 2%;
+}
+#login:hover {
+    background-color: #b2ff7e;
+    cursor: pointer;
+    border-top: 10px solid #b2ff7e;
+    border-bottom: 10px solid #b2ff7e;
+}
+#register {
+    color: #939AA3;
+    font-size: 12.5px;
+    margin: 0;
+}
+#register a{
+    color: #66ff00;
+    text-decoration: none;
+}
+#tos{
+    color:#66ff00;
+    text-decoration: none;
+
+}
+@media all and (max-width: 500px) {
+    body {
+    background-color: #000000;
+    font-family: "PT Sans", sans-serif;
+}
+#ThisCord {
+    text-align: left;
+    color: #eeeeee;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 1% 0 5% 1vw;
+}
+#log-in {
+    border-radius: 5px;
+    margin: auto;
+    background-color: #313338;
+    padding: 2.5%;
+    min-width: 90%;
+}
+#log-in h2{
+    color: #F2F3F5;
+    font-size: 25px;
+    text-align: center;
+    margin: 0 0 1% 0;
+}
+.label {
+    color: #B5BAC1;
+    font-weight: bold;
+    width: 98%;
+    font-size: 15px;
+}
+.input {
+    background-color: #1E1F22;
+    border: none;
+    width: 98%;
+    color: #D3D6D9;
+    margin-bottom:5%;
+    margin-top: 2%;
+    border-top: 10px solid #1E1F22;
+    border-bottom: 10px solid #1E1F22;
+    font-family:"PT Sans", sans-serif ;
+    color: #B5BAC1;
+    font-weight: bold;
+    font-size: 15px;
+}
+#login {
+    background-color: #66ff00;
+    border: none;
+    width: 98%;
+    font-size: 15px;
+    border-top: 10px solid #66ff00;
+    border-bottom: 10px solid #66ff00;
+    font-weight: bold;
+    margin-bottom: 2%;
+}
+#login:hover {
+    background-color: #b2ff7e;
+    cursor: pointer;
+    border-top: 10px solid #b2ff7e;
+    border-bottom: 10px solid #b2ff7e;
+}
+#register {
+    color: #939AA3;
+    font-size: 12.5px;
+    margin: 0;
+}
+#register a{
+    color: #00A9FB;
+    text-decoration: none;
+}
+}

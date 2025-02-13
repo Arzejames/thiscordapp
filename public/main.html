@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="icon" type="image/x-icon" href="content/favicon.ico">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="main_styles.css"></rel>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+        <title>ThisCord</title>
+    </head>
+    <body>
+        <nav id="header">
+            <h1 id="title">This<span id="otherTitleColor">Cord</span></h1>
+        </nav>
+        <div id="container">
+            <div id="serverContainer">
+                <ul id="serverList">
+                    <li id="currentServerTitle">Servers</li>
+                    <li onclick="changeServer('server1')" id="server1Text">server1</li>
+                    <li onclick="changeServer('server2')" id="server2Text">server2</li>
+                    <li onclick="changeServer('server3')" id="server3Text">server3</li>
+                </ul>
+                <div id="stuff">
+                    <p id="STUFF2">© 2025 ThisCord
+                    </p>
+                </div>
+            </div>
+            <div class="seperator"></div>
+            <div id="channelContainer">
+                <ul id="channelList">
+                    <li id="currentChannelTitle">server1</li>
+                    <!-- <li onclick="changeChannel('channel1')" id="channel1Text">channel1</li>
+                    <li onclick="changeChannel('channel2')" id="channel2Text">channel2</li>
+                    <li onclick="changeChannel('channel3')" id="channel3Text">channel3</li> -->
+                </ul>
+                <div id="userInfo">
+                    <div id="h"></div>
+                    <button id="LogOut" onclick="clearCookiesRedirect()">Log Out</button>
+                </div>
+            </div>
+            <div class="seperator"></div>
+            <div id="messageListContainer">
+                <ul id="messageList">
+                    <button id="loadMore" onclick="loadMore()">Load More</button>
+                </ul>
+                <div id="messageInput">
+                    <input type="file" id="fileInput" style="display: none;">
+                    <button class="upload" id="uploadFile" onclick="document.getElementById('fileInput').click();">Upload File</button>
+                    <input class="input" placeholder="Type Message Here" id="messageBox" >
+                    <button class="submit" id="sendMessagnBTN" onclick="sendMessage()">Send</button>
+                </div>
+            </div>
+        </div>
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="main.js"></script>
+    </body>
+</html>

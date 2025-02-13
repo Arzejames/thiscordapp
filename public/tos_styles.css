@@ -1,0 +1,38 @@
+body {
+    background-color: #1E1F22;
+    color:#eeeeee;
+}
+.terms-of-service {
+    max-width: 40vw;
+    margin: 2vh 30vw;
+    font-family: "PT Sans", sans-serif;
+}
+#otherTitleColor {
+    color:#66ff00;
+}
+#header {
+    background-color: #000000;
+    font-size: 3vh;
+    height: 5vh;
+    padding: 10px;
+    color: white;
+    font-family: "PT Sans", sans-serif;
+    margin: 0;
+}
+#title {
+    margin: 0;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+#sendToMain {
+    text-decoration: none;
+    color: #eeeeee;
+}
+@media all and (max-width:1000px) {
+    .terms-of-service {
+        max-width: 80vw;
+        margin: 2vh 10vw;
+    }
+}

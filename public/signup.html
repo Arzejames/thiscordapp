@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" type="image/x-icon" href="content/favicon.ico">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="signup_styles.css">
+    </rel>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <title>ThisCord</title>
+</head>
+<body>
+    <nav id="header">
+        <h1 id="title">This<span id="otherTitleColor">Cord</span></h1>
+    </nav>
+    <form id="log-in">
+        <h2>Create an account
+        </h2>
+        <h3 id="errormessage"></h3>
+        <!-- <label for="email" id="Elabel" class="label">EMAIL</label>
+        <input name="email" id="email" class="input" /> -->
+        <!--<label for="name" id="Nlabel" class="label">DISPLAY NAME</label>
+            <input name="name" id="name" class="input" />-->
+        <label for="usrname" id="Ulabel" class="label">USERNAME</label>
+        <input name="usrname" id="usrname" class="input" required />
+        <label for="passwd" id="Plabel" class="label">PASSWORD</label>
+        <input name="passwd" id="passwd" class="input" required type="password" />
+        <input type="checkbox" id="agree" name="agree" value="agree" required>
+        <label for="agree" id="Alabel" class="label">I agree to the ThisCord <a id="tos" href="Terms_of_service.html">Terms of Service</a></label>
+        <div style="margin-bottom:20px;"></div>
+        <button name="login" id="login">Sign Up</button>
+        <p id="register"><a href="login.html">Already have an account?</a></p>
+    </form>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="signup.js"></script>
+</body>
+
+</html>
